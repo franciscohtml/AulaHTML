@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form method="POST" action="cadastro.html" enctype="multipart/form-data">
+        <label>nome</label>
+        <input type="text" name="nome" required minlength="3" maxlength="10">
+
+        <label>email</label>
+        <input type="email" name="e-mail">
+
+        <label>SENHA:</label>
+        <input type="password" name="SENHA" size="4">
+
+        <label>situação</label>
+        <select name="situacao" id="situacao">
+        <option="select"selecione></option>
+        <option value="1">LIBERADO</option>
+        <option value="2">BLOQUEADO</option>
+    </select>
+
+    <label>niveis de acesso</label>
+    <input list="acesso_1" name="acesso_1">
+    <datalist id="acesso_1">
+        <option value="1">
+        <option value="2">
+        <option value="3">
+
+    </datalist>
+
+    <div>
+        <input type="checkbox" id="sabado" name="sabado">
+        <checked>
+            <label for="sabado">SÁBADO</label>
+            <input type="checkbox" id="domingo" name="domingo">
+        </checked>
+        <label for="domingo"> domingo</label>
+        <input type="checkbox" id="segunda" name="segunda">
+        <label for="segunda">segunda</label>
+
+        <input type="checkbox" id="terça" name="terça">
+        <label for="terça">terça</label>
+
+        <input type="checkbox" id="quarta" name="quarta">
+        <label for="quarta">quarta</label>
+
+        <input type="checkbox" id="quinta" name="quinta">
+        <label for="quinta">quinta</label>
+
+        <input type="checkbox" id="sexta" name="sexta">
+        <label for="sexta">sexta</label>
+
+        </div>
+
+        
+        <input type="submit" value="cadastrar">
+    
+    
+    </form>
+</body>
+</html>
